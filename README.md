@@ -30,7 +30,7 @@ npm install
 npm run dev   # http://127.0.0.1:47321
 ```
 
-- Layouts: Slide v2, Slide v1, QWERTY (baseline), or paste your own 3×10 grid (for example the
+- Layouts: Slide v2, Slide v1, QWERTY and Colemak (baselines), or paste your own 3×10 grid (for example the
   output of `totem_layout_v2.py --slide-bottom 0.5`).
 - Tests: 25/50 words or 30/60 seconds, from the top 200 or 1,000 English words, or a slide drill of
   words that contain the layout's slides. Optional punctuation.

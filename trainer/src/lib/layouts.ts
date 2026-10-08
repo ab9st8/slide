@@ -26,6 +26,12 @@ export const PRESETS: LayoutDef[] = [
     description: 'Baseline, so you can compare your transition timings.',
     rows: ['QWERTYUIOP', 'ASDFGHJKL;', 'ZXCVBNM,./'],
   },
+  {
+    id: 'colemak',
+    name: 'Colemak',
+    description: 'Classic Colemak, for comparison: built to keep same-finger pairs rare.',
+    rows: ['QWFPGJLUY;', 'ARSTDHNEIO', 'ZXCVBKM,./'],
+  },
 ]
 
 export const CUSTOM_ID = 'custom'
