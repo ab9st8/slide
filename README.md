@@ -18,6 +18,27 @@ There are two versions.
 
 For reference, QWERTY has 5.25% non-slide same-finger digraphs and Colemak-DH has 0.56%.
 
+## Try it: the slide trainer (`trainer/`)
+
+A small typing test (Vite + React) that emulates any of these layouts in the browser, so you can
+try them without flashing firmware. It remaps keys by *physical position* (`event.code`), so a
+keyboard sending stock QWERTY, like a Totem on its default keymap, types the chosen layout.
+
+```bash
+cd trainer
+npm install
+npm run dev   # http://127.0.0.1:47321
+```
+
+- Layouts: Slide v2, Slide v1, QWERTY (baseline), or paste your own 3×10 grid (for example the
+  output of `totem_layout_v2.py --slide-bottom 0.5`).
+- Tests: 25/50 words or 30/60 seconds, from the top 200 or 1,000 English words, or a slide drill of
+  words that contain the layout's slides. Optional punctuation.
+- After each test it shows the median time of your downward slides against hand switches,
+  same-hand rolls, and other same-finger pairs, which is the question this layout is betting on.
+  Results are kept per layout in local storage.
+- Turn off "emulate from QWERTY positions" once you've flashed the layout for real.
+
 ## v1: greedy downward digraphs (`totem_layout.py`)
 
 1. **Home row** = the 10 most frequent English letters (E T A O I N S R H L, 74.2% of letters).
