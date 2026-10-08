@@ -72,7 +72,7 @@ export function Results({ summary, samples, history, layoutName }: Props) {
         </h3>
         <div className="space-y-2.5">
           {stats.map((s) => (
-            <div key={s.kind} className="grid grid-cols-[9.5rem_1fr_6.5rem] items-center gap-3 text-sm">
+            <div key={s.kind} className="grid grid-cols-[11rem_1fr_6.5rem] items-center gap-3 text-sm">
               <span className="text-zinc-300">{TRANSITION_LABELS[s.kind]}</span>
               <div className="h-2 overflow-hidden rounded-full bg-white/5">
                 {s.count > 0 && (

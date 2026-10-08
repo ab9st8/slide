@@ -86,7 +86,7 @@ export function Keymap({ layout, prevChar, nextChar, flash }: Props) {
                   </div>
                 )
               })}
-              <span className="mt-1.5 text-[10px] tracking-wide text-muted-foreground/70 uppercase">
+              <span className="mt-1.5 hidden text-[10px] tracking-wide text-muted-foreground/70 uppercase sm:block">
                 {FINGER_NAMES[fi]}
               </span>
             </div>
@@ -98,7 +98,7 @@ export function Keymap({ layout, prevChar, nextChar, flash }: Props) {
   }
 
   return (
-    <div className="flex flex-col items-center [--k:clamp(30px,5.4vw,56px)]">
+    <div className="flex flex-col items-center [--k:clamp(21px,5.4vw,56px)]">
       <div className="flex items-start gap-[calc(var(--k)*1.4)]">
         {half('left')}
         {half('right')}
